@@ -196,7 +196,7 @@ form.addEventListener("submit", e => {
 const generateAnother = document.getElementById('generate-another');
 
 generateAnother.addEventListener("click", () => {
-  
+
     document.getElementById('full-name').value = "";
     document.getElementById('email').value = "";
     document.getElementById('github').value = "";
