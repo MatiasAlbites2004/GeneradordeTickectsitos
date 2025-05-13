@@ -247,6 +247,8 @@ body {
     transform: scale(1.05);
 }
 
+
+
 form .generate-ticket {
     cursor: pointer;
     background-color: var(--Orange-500);
