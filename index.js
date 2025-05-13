@@ -193,4 +193,22 @@ form.addEventListener("submit", e => {
 })
 
 
+const generateAnother = document.getElementById('generate-another');
 
+generateAnother.addEventListener("click", () => {
+  
+    document.getElementById('full-name').value = "";
+    document.getElementById('email').value = "";
+    document.getElementById('github').value = "";
+    resetUpload();
+
+
+    textInputs.forEach(input => {
+        input.classList.remove("error");
+        input.nextElementSibling.classList.remove("error");
+    });
+
+
+    document.getElementById("form-content").classList.remove("hide");
+    document.getElementById("display-data").style.display = "none";
+});

@@ -272,6 +272,7 @@ form .generate-ticket:hover {
     margin: auto;
     position: relative;
     z-index: 20;
+    text-align: center;
 }
 
 .display-data .logo {
@@ -407,4 +408,18 @@ form .generate-ticket:hover {
     .form-content {
         height: 620px;
     }
+}
+
+
+.generate-another {
+    cursor: pointer;
+    background-color: var(--Orange-500);
+    padding: 1rem 2rem;
+    font-size: 1.15rem;
+    font-weight: 700;
+    border-radius: 0.75rem;
+    border: none;
+    transition: all 200ms ease;
+    display: inline-block;
+    margin: 2rem auto 0;
 }
