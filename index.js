@@ -52,7 +52,7 @@ function validateFile(input, hint) {
                 <path stroke="#f57261" stroke-linecap="round" stroke-linejoin="round" d="M2 8a6 6 0 1 0 12 0A6 6 0 0 0 2 8Z"/>
                 <path fill="#f57261" d="M8.004 10.462V7.596ZM8 5.57v-.042Z"/>
                 <path stroke="#f57261" stroke-linecap="round" stroke-linejoin="round" d="M8.004 10.462V7.596M8 5.569v-.042"/>
-            </svg> Please upload an image.`;
+            </svg> Por favor sube una imagen.`;
         isValid = false;
     } else {
         const validTypes = ["image/jpeg", "image/png"];
@@ -66,7 +66,7 @@ function validateFile(input, hint) {
                 <path stroke="#f57261" stroke-linecap="round" stroke-linejoin="round" d="M2 8a6 6 0 1 0 12 0A6 6 0 0 0 2 8Z"/>
                 <path fill="#f57261" d="M8.004 10.462V7.596ZM8 5.57v-.042Z"/>
                 <path stroke="#f57261" stroke-linecap="round" stroke-linejoin="round" d="M8.004 10.462V7.596M8 5.569v-.042"/>
-            </svg> Invalid filetype. Please upload a JPG or PNG photo.`;
+            </svg> Tipo de archivo inválido. Sube una foto JPG o PNG.`;
             input.value = "";
             isValid = false;
         } else if (file.size > maxSize) {
@@ -76,12 +76,12 @@ function validateFile(input, hint) {
                 <path stroke="#f57261" stroke-linecap="round" stroke-linejoin="round" d="M2 8a6 6 0 1 0 12 0A6 6 0 0 0 2 8Z"/>
                 <path fill="#f57261" d="M8.004 10.462V7.596ZM8 5.57v-.042Z"/>
                 <path stroke="#f57261" stroke-linecap="round" stroke-linejoin="round" d="M8.004 10.462V7.596M8 5.569v-.042"/>
-            </svg> File too large. Please upload a photo under 500KB.`;
+            </svg> Archivo demasiado grande. Sube una imagen menor a 500KB.`;
             input.value = "";
             isValid = false;
         } else {
             hint.classList.remove("error");
-            hint.innerHTML = '<img src="images/icon-info.svg" alt=""> Upload your photo (JPG or PNG, max size: 500KB).';
+            hint.innerHTML = '<img src="images/icon-info.svg" alt=""> Sube tu foto (JPG o PNG, tamaño máximo: 500KB).';
             displayUploadedImage(file);
         }
     }
@@ -117,7 +117,7 @@ function resetUpload() {
                 <path stroke="#f57261" stroke-linecap="round" stroke-linejoin="round" d="M2 8a6 6 0 1 0 12 0A6 6 0 0 0 2 8Z"/>
                 <path fill="#f57261" d="M8.004 10.462V7.596ZM8 5.57v-.042Z"/>
                 <path stroke="#f57261" stroke-linecap="round" stroke-linejoin="round" d="M8.004 10.462V7.596M8 5.569v-.042"/>
-            </svg> Upload your photo (JPG or PNG, max size: 500kb).`
+            </svg> Sube tu foto (JPG o PNG, tamaño máximo: 500KB).`
 }
 
 
