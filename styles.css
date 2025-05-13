@@ -272,7 +272,7 @@ form .generate-ticket:hover {
     margin: auto;
     position: relative;
     z-index: 20;
-    text-align: center;
+    
 }
 
 .display-data .logo {
@@ -422,4 +422,12 @@ form .generate-ticket:hover {
     transition: all 200ms ease;
     display: inline-block;
     margin: 2rem auto 0;
+    align-items: center;
+}
+
+
+.generate-button-another {
+    display: flex;
+    justify-content: center;
+    margin-top: 2rem;
 }
